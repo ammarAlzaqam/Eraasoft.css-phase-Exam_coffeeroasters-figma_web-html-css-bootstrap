@@ -1,0 +1,37 @@
+#hero-sec {
+  margin-top: clamp(32px, 7vw, 40px);
+
+  .container {
+    .content {
+      background: url(../images/hero-sec/bg-lg.png) center/cover;
+      padding: clamp(96px, 10vw, 112px) clamp(24px, 6.3vw, 80px);
+      border-radius: 10px;
+
+      @media (max-width: 767px) {
+        background: url(../images/hero-sec/bg-md.png) center/cover;
+      }
+
+      @media (max-width: 575px) {
+        background: url(../images/hero-sec/bg-sm.png) center/cover;
+      }
+
+      .text {
+        width: 493px;
+        max-width: 100%;
+
+        @media (max-width: 767px) {
+          width: 420px;
+        }
+
+        p.des {
+          margin-block: 32px 48px;
+          opacity: 0.8;
+
+          @media (max-width: 575px) {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}

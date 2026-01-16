@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("./header.css");
+
+:root {
+  --primary: #333d4b;
+  --secondary: #fefcf7;
+  --accent: #fdd6ba;
+  --green-500: #0e8784;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Barlow", sans-serif;
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+  font-family: "Fraunces", serif;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+span,
+button,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--secondary);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.container {
+  max-width: 1302px;
+  padding-inline: 16px;
+
+  @media (max-width: 767px) {
+    max-width: 736px;
+  }
+}
+
+.head-text {
+  color: var(--secondary);
+  font-weight: 900;
+  font-size: clamp(40px, 6.3vw, 72px);
+  line-height: 100%;
+}
+
+.des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+
+  &.light {
+    color: var(--secondary);
+  }
+}
+
+.btn {
+  background-color: var(--green-500);
+  border-radius: 6px;
+  padding: 1rem 2rem;
+
+  color: var(--secondary);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 140%;
+}

@@ -1,0 +1,23 @@
+header {
+  padding-top: clamp(24px, 6vw, 40px);
+
+  .container {
+    nav {
+      gap: 33px;
+
+      a {
+        color: #83888f;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0.92px;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
