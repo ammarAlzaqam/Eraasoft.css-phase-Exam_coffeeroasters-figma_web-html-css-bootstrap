@@ -2,6 +2,12 @@ header {
   padding-top: clamp(24px, 6vw, 40px);
 
   .container {
+    > img {
+      @media (max-width: 575px) {
+        width: 160px;
+      }
+    }
+
     nav {
       gap: 33px;
 

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url("./header.css");
+@import url("./footer.css");
 
 :root {
   --primary: #333d4b;
@@ -49,29 +50,20 @@ a {
   color: var(--primary);
 }
 
+.space-top {
+  padding-top: 140px;
+
+  @media (max-width: 767px) {
+    padding-top: 80px;
+  }
+}
+
 .container {
   max-width: 1302px;
   padding-inline: 16px;
 
   @media (max-width: 767px) {
     max-width: 736px;
-  }
-}
-
-.head-text {
-  color: var(--secondary);
-  font-weight: 900;
-  font-size: clamp(40px, 6.3vw, 72px);
-  line-height: 100%;
-}
-
-.des {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-
-  &.light {
-    color: var(--secondary);
   }
 }
 
@@ -84,4 +76,50 @@ a {
   font-weight: 900;
   font-size: 18px;
   line-height: 140%;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+  }
+}
+
+.head-text {
+  color: var(--secondary);
+  font-weight: 900;
+  font-size: clamp(40px, 6.3vw, 72px);
+  line-height: 100%;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 120%;
+
+  &.light {
+    color: var(--secondary);
+  }
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 150%;
+  white-space: nowrap;
+
+  &.light {
+    color: var(--secondary);
+  }
+}
+
+.des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+
+  &.light {
+    color: var(--secondary);
+  }
 }

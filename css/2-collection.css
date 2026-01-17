@@ -1,0 +1,42 @@
+main {
+  .container {
+    @media (min-width: 1200px) {
+      width: 1142px;
+    }
+
+    > img {
+      width: 100%;
+    }
+
+    .row {
+      margin-top: -5rem;
+
+      @media (max-width: 767px) {
+        margin-top: -5.6rem;
+      }
+
+      @media (max-width: 575px) {
+        margin-top: -1rem;
+      }
+
+      .box {
+        @media (min-width: 768px) {
+          margin-inline: 0.5rem;
+        }
+
+        img {
+          max-width: 100%;
+        }
+
+        .text {
+          p {
+            @media (min-width: 576px) and (max-width: 767px) {
+              width: 300px;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

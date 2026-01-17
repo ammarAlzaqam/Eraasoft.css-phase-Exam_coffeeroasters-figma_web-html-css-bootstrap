@@ -1,0 +1,69 @@
+#how {
+  .container {
+    @media (min-width: 1200px) {
+      width: 1142px;
+    }
+
+    h3 {
+      margin-bottom: clamp(64px, 12vw, 80px);
+      color: #83888f;
+    }
+
+    .content {
+      margin-bottom: clamp(40px, 10vw, 64px);
+
+      .box {
+        gap: 80px;
+        width: 381px;
+        height: 100%;
+
+        @media (max-width: 1199px) {
+          max-width: 33.33333333333%;
+        }
+
+        @media (max-width: 575px) {
+          max-width: 100%;
+        }
+
+        .shapes-wrapper {
+          .circle {
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            border: 2px solid var(--green-500);
+          }
+
+          .line {
+            height: 1px;
+            border: 2px solid var(--accent);
+          }
+        }
+
+        .info {
+          gap: clamp(24px, 6vw, 40px);
+
+          @media (min-width: 768px) {
+            padding-right: clamp(20px, 7vw, 96px);
+          }
+
+          @media (min-width: 576px) and (max-width: 767px) {
+            padding-right: 20px;
+          }
+
+          span {
+            color: var(--accent);
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 100%;
+          }
+
+          h4 {
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 114%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+#choose {
+  .container {
+    .content {
+      height: 577px;
+      background: url(../images/home/choose/bg.png) center/cover;
+      padding-top: clamp(64px, 12vw, 96px);
+      border-radius: 8px;
+
+      > .text {
+        p {
+          width: 540px;
+          max-width: 100%;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .row {
+      width: 100%;
+      margin-top: -281px;
+
+      @media (min-width: 1200px) {
+        width: 1134px;
+      }
+
+      @media (max-width: 767px) {
+        padding-inline: 53.5px;
+        margin-top: -313px;
+      }
+
+      @media (max-width: 575px) {
+        padding-inline: 19.5px;
+        margin-top: -187px;
+      }
+
+      .box {
+        background-color: var(--green-500);
+        padding: 3rem 2rem;
+        border-radius: 8px;
+        height: 100%;
+
+        @media (max-width: 767px) {
+          padding: 40px 48px;
+        }
+
+        @media (max-width: 575px) {
+          padding: 24px 20px;
+        }
+      }
+    }
+  }
+}

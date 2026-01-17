@@ -1,0 +1,62 @@
+footer {
+  margin-bottom: 40px;
+
+  @media (max-width: 575px) {
+    margin-bottom: 24px;
+  }
+  .container {
+    .content {
+      background-color: var(--primary);
+      padding: 48px clamp(40px, 6vw, 80px);
+
+      @media (max-width: 767px) {
+        padding: 40px 20px;
+      }
+
+      > img {
+        @media (max-width: 767px) {
+          width: 160px;
+        }
+      }
+
+      nav {
+        gap: clamp(20px, 3vw, 32px);
+
+        @media (max-width: 767px) {
+          gap: 20px;
+        }
+
+        a {
+          color: #83888f;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 130%;
+          letter-spacing: 0.92px;
+          text-transform: uppercase;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--secondary);
+          }
+        }
+      }
+
+      .social {
+        gap: 24px;
+
+        @media (max-width: 767px) {
+          gap: 20px;
+        }
+
+        svg {
+          fill: var(--secondary);
+          transition: fill 0.3s ease;
+
+          &:hover {
+            fill: var(--accent);
+          }
+        }
+      }
+    }
+  }
+}

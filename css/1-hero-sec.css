@@ -3,16 +3,16 @@
 
   .container {
     .content {
-      background: url(../images/hero-sec/bg-lg.png) center/cover;
+      background: url(../images/home/hero-sec/bg-lg.png) center/cover;
       padding: clamp(96px, 10vw, 112px) clamp(24px, 6.3vw, 80px);
       border-radius: 10px;
 
       @media (max-width: 767px) {
-        background: url(../images/hero-sec/bg-md.png) center/cover;
+        background: url(../images/home/hero-sec/bg-md.png) center/cover;
       }
 
       @media (max-width: 575px) {
-        background: url(../images/hero-sec/bg-sm.png) center/cover;
+        background: url(../images/home/hero-sec/bg-sm.png) center/cover;
       }
 
       .text {
