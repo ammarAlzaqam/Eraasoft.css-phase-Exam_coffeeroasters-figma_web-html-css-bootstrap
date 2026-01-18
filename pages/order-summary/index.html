@@ -13,15 +13,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../../layout/index.css">
     <link rel="stylesheet" href="../subscribe/css/subscribePage.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./orderSummaryPage.css">
     <title>Subscribe</title>
 </head>
 
 <body>
     <!--//? Order Summary Popup Modal -->
-    <a href="../subscribe/index.html" id="popup-modal">
-
-    </a>
+    <div id="popup-modal" class="w-100 d-flex justify-content-center align-items-stretch align-items-md-center">
+        <a href="../subscribe/index.html" class="overlay"></a>
+        <div class="order-summary">
+            <div class="head">
+                <h2 class="title light">Order Summary</h2>
+            </div>
+            <div class="content">
+                <h3 class="card-title">“I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of
+                    bean. <span>250g</span> ground ala
+                    <span>Cafetiére</span>, sent to me <span>Every Week</span>.”
+                </h3>
+                <p class="des">
+                    Is this correct? You can proceed to checkout or go back to plan selection if something is off.
+                    Subscription discount codes can also be redeemed at the checkout.
+                </p>
+                <div
+                    class="summary d-flex flex-column flex-sm-row justify-content-between align-items-stretch align-items-sm-center gap-3">
+                    <h5>$14.00/ mo</h5>
+                    <a class="btn text-start" href="../subscribe/index.html">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--//TODO>> Header -->
     <header>
@@ -73,7 +93,8 @@
             <div class="content d-flex flex-column align-items-center align-items-sm-start text-center text-sm-start">
                 <h1 class="head-text">Create plan</h1>
                 <p class="des light">
-                    Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew
+                    Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever
+                    brew
                     method you use. For choice, for convenience, for quality.
                 </p>
             </div>
@@ -95,8 +116,10 @@
                         <h5>01</h5>
                         <h3 class="pe-0 pe-lg-5">Pick your coffee</h3>
                         <p class="des light">
-                            Select from our evolving range of artisan coffees. Our beans are ethically sourced and we
-                            pay fair prices for them. There are new coffees in all profiles every month for you to try
+                            Select from our evolving range of artisan coffees. Our beans are ethically sourced and
+                            we
+                            pay fair prices for them. There are new coffees in all profiles every month for you to
+                            try
                             out.
                         </p>
                     </div>
@@ -104,7 +127,8 @@
                         <h5>02</h5>
                         <h3>Choose the frequency</h3>
                         <p class="des light">
-                            Customize your order frequency, quantity, even your roast style and grind type. Pause, skip
+                            Customize your order frequency, quantity, even your roast style and grind type. Pause,
+                            skip
                             or cancel your subscription with no commitment through our online portal. </p>
                     </div>
                     <div class="box d-flex flex-column">
