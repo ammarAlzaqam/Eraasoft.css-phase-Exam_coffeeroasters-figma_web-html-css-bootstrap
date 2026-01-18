@@ -1,9 +1,5 @@
 #how {
   .container {
-    @media (min-width: 1200px) {
-      width: 1142px;
-    }
-
     h3 {
       margin-bottom: clamp(64px, 12vw, 80px);
       color: #83888f;

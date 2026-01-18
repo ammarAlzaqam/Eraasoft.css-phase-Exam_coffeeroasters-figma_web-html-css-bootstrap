@@ -49,6 +49,7 @@ footer {
         }
 
         svg {
+          cursor: pointer;
           fill: var(--secondary);
           transition: fill 0.3s ease;
 

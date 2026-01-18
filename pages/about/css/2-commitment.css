@@ -1,0 +1,34 @@
+#commitment {
+  .container {
+    img {
+      width: 445px;
+      max-width: 40.1%;
+      min-height: 520px;
+      object-fit: cover;
+      object-position: left top;
+      border-radius: 8px;
+
+      @media (max-width: 575px) {
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        min-height: 400px;
+      }
+    }
+
+    .content {
+      h2.title {
+        margin-bottom: 32px;
+
+        @media (max-width: 575px) {
+          margin-bottom: 20px;
+          font-size: 28px;
+        }
+      }
+
+      p {
+        max-width: 539px;
+      }
+    }
+  }
+}

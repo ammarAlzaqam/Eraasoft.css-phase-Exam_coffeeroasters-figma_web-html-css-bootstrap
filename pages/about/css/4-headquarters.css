@@ -1,0 +1,36 @@
+#headquarters {
+  .container {
+    h3.card-title {
+      margin-bottom: 64px;
+      color: #83888f;
+    }
+
+    .content {
+      gap: 96px;
+
+      @media (max-width: 1199px) {
+        gap: clamp(40px, 9vw, 67.5px);
+      }
+
+      @media (max-width: 575px) {
+        gap: 24px;
+      }
+
+      .box {
+        @media (min-width: 1200px) {
+          width: 33.33333333333333%;
+        }
+
+        img {
+          margin-bottom: 40px;
+        }
+
+        h3 {
+          font-weight: 900;
+          font-size: 32px;
+          line-height: 113.99999999999999%;
+        }
+      }
+    }
+  }
+}
