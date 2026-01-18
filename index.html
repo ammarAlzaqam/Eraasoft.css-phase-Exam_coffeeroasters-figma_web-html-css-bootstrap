@@ -19,14 +19,44 @@
 <body>
     <!--//TODO>> Header -->
     <header>
-        <div class="container d-flex justify-content-between align-items-center">
-            <img src="./layout/images/header/LOGO.svg" alt="LOGO">
-            <nav class="d-none d-sm-flex">
-                <a class="active" href="#" data-replace="Home"><span>Home</span></a>
-                <a href="./pages/about/index.html" data-replace="About us"><span>About us</span></a>
-                <a href="./pages/subscribe/index.html" data-replace="Create your plan"><span>Create your plan</span></a>
-            </nav>
-            <img class="d-flex d-sm-none" src="./layout/images/header/menu.svg" alt="menu">
+        <div class="navbar navbar-expand-sm p-0">
+            <div class="container d-flex justify-content-between align-items-center gap-4 gap-sm-3">
+
+                <!-- Logo -->
+                <a href="#">
+                    <img src="./layout/images/header/LOGO.svg" alt="LOGO">
+                </a>
+
+                <!-- Toggle Button (mobile only) -->
+                <button class="navbar-toggler collapsed border-0 p-0 d-sm-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img class="animate__animated animate__flipInX" src="./layout/images/header/menu.svg" alt="menu">
+                    <i class="fa-solid fa-bars-staggered animate__animated animate__flipInY"></i>
+                </button>
+
+                <!-- Nav Links -->
+                <div class="collapse navbar-collapse d-sm-flex" id="mainNav">
+                    <nav class="navbar-nav ms-auto d-flex">
+                        <a class="active nav-link p-sm-0 d-flex justify-content-between align-items-center gap-1"
+                            href="#" data-replace="Home">
+                            <span>Home</span>
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                        <a class="nav-link p-sm-0 d-flex justify-content-between align-items-center gap-1"
+                            href="./pages/about/index.html" data-replace="About us">
+                            <span>About us</span>
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </a>
+                        <a class="nav-link p-sm-0 d-flex justify-content-between align-items-center gap-1"
+                            href="./pages/subscribe/index.html" data-replace="Create your plan">
+                            <span>Create your plan</span>
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </a>
+                    </nav>
+                </div>
+
+            </div>
         </div>
     </header>
 

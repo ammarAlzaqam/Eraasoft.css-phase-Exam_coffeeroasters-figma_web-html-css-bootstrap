@@ -9,6 +9,8 @@
   --secondary: #fefcf7;
   --accent: #fdd6ba;
   --green-500: #0e8784;
+  --font-title: "Fraunces", serif;
+  --font-body: "Barlow", sans-serif;
 }
 
 * {
@@ -70,6 +72,18 @@ a {
   }
 }
 
+.space-top-3 {
+  padding-top: 140px;
+
+  @media (max-width: 767px) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 64px;
+  }
+}
+
 .container {
   max-width: 1302px;
   padding-inline: 16px;
@@ -96,11 +110,19 @@ a {
   line-height: 140%;
   transition:
     color 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    border 0.3s ease;
 
   &:hover {
-    background-color: var(--accent);
-    color: var(--primary);
+    background-color: #66d2cf;
+    color: var(--secondary);
+  }
+
+  &:focus,
+  &:active {
+    background-color: var(--secondary);
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
   }
 }
 

@@ -1,0 +1,28 @@
+#sub-hero-sec {
+  padding-top: 40px;
+
+  .container {
+    .content {
+      gap: 32px;
+      padding: 140px 80px;
+      background: url(../images/hero-sec/bg-lg.png) center/cover;
+      border-radius: 12px;
+
+      @media (max-width: 767px) {
+        background: url(../images/hero-sec/bg-md.png) center/cover;
+        padding-inline: 48px;
+      }
+
+      @media (max-width: 575px) {
+        background: url(../images/hero-sec/bg-sm.png) center/cover;
+        padding: 80px 24px;
+        gap: 20px;
+      }
+
+      p {
+        max-width: 445px;
+        opacity: 0.8;
+      }
+    }
+  }
+}

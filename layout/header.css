@@ -49,11 +49,19 @@ header {
     nav {
       gap: 33px;
 
-      @media (max-width: 575px) {
+      @media (max-width: 767px) {
         gap: 20px;
       }
 
-      a {
+      @media (min-width: 576px) and (max-width: 629px) {
+        gap: 0px;
+      }
+
+      a.nav-link {
+        @media (min-width: 576px) and (max-width: 629px) {
+          gap: 0px !important;
+        }
+
         color: #83888f;
         font-weight: 700;
         font-size: 12px;
@@ -112,7 +120,27 @@ header {
           transform: translate3d(-200%, 0, 0);
         }
 
+        i {
+          font-size: 1.2rem;
+          opacity: 0;
+          transform: translateX(15px) scale(0);
+          transition:
+            transform 0.5s ease,
+            opacity 0.5s ease;
+        }
+
+        &:hover i {
+          transform: translateX(0) scale(1);
+          opacity: 1;
+        }
+
         &.active {
+          i {
+            color: var(--green-500);
+            opacity: 1;
+            transform: translateX(0) scale(1);
+          }
+
           &::before {
             background-color: var(--green-500);
             transform-origin: 0% 50%;
