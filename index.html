@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/Icon.svg" type="image/svg">
+    <!--//? Bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--//? Font-Awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--//? Animate.css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="./layout/index.css">
     <link rel="stylesheet" href="./css/homePage.css">
     <title>Coffee-roasters</title>
@@ -19,7 +23,7 @@
 <body>
     <!--//TODO>> Header -->
     <header>
-        <div class="navbar navbar-expand-sm p-0">
+        <div class="navbar navbar-expand-sm p-0 animate__animated animate__fadeIn">
             <div class="container d-flex justify-content-between align-items-center gap-4 gap-sm-3">
 
                 <!-- Logo -->
@@ -63,7 +67,8 @@
     <!--//TODO>> 1-Hero-Sec -->
     <section id="hero-sec">
         <div class="container">
-            <div class="content d-flex flex-column align-items-center align-items-sm-start text-center text-sm-start">
+            <div
+                class="content d-flex flex-column align-items-center align-items-sm-start text-center text-sm-start animate__animated animate__jackInTheBox">
                 <div class="text">
                     <h1 class="head-text">Great coffee made simple.</h1>
                     <p class="des light">
@@ -80,11 +85,12 @@
     <!--//TODO>> 2-Collection -->
     <main class="space-top">
         <div class="container narrow">
-            <img src="./images/home/collection/bg.png" alt="title-img">
+            <img class="wow animate__animated animate__zoomInDown" src="./images/home/collection/bg.png"
+                alt="title-img">
             <div class="row g-3">
                 <div class="col-12 col-md-3">
                     <div
-                        class="box mb-3 mb-sm-0 d-flex flex-column flex-sm-row flex-md-column align-items-center gap-0 gap-sm-3 gap-md-0 text-center text-sm-start text-md-center">
+                        class="box mb-3 mb-sm-0 d-flex flex-column flex-sm-row flex-md-column align-items-center gap-0 gap-sm-3 gap-md-0 text-center text-sm-start text-md-center wow animate__animated animate__fadeInUp">
                         <img class="mb-4 mb-sm-0 mb-md-5 mr-0 mr-sm-3 mr-md-0" src="./images/home/collection/1.png"
                             alt="product-img">
                         <div class="text d-flex flex-column gap-3 gap-sm-4">
@@ -97,7 +103,7 @@
                 </div>
                 <div class="col-12 col-md-3">
                     <div
-                        class="box mb-3 mb-sm-0 d-flex flex-column flex-sm-row flex-md-column align-items-center gap-0 gap-sm-3 gap-md-0 text-center text-sm-start text-md-center">
+                        class="box mb-3 mb-sm-0 d-flex flex-column flex-sm-row flex-md-column align-items-center gap-0 gap-sm-3 gap-md-0 text-center text-sm-start text-md-center wow animate__animated animate__fadeInUp">
                         <img class="mb-4 mb-sm-0 mb-md-5 mr-0 mr-sm-3 mr-md-0" src="./images/home/collection/2.png"
                             alt="product-img">
                         <div class="text d-flex flex-column gap-3 gap-sm-4">
@@ -110,7 +116,7 @@
                 </div>
                 <div class="col-12 col-md-3">
                     <div
-                        class="box mb-3 mb-sm-0 d-flex flex-column flex-sm-row flex-md-column align-items-center gap-0 gap-sm-3 gap-md-0 text-center text-sm-start text-md-center">
+                        class="box mb-3 mb-sm-0 d-flex flex-column flex-sm-row flex-md-column align-items-center gap-0 gap-sm-3 gap-md-0 text-center text-sm-start text-md-center wow animate__animated animate__fadeInUp">
                         <img class="mb-4 mb-sm-0 mb-md-5 mr-0 mr-sm-3 mr-md-0" src="./images/home/collection/3.png"
                             alt="product-img">
                         <div class="text d-flex flex-column gap-3 gap-sm-4">
@@ -122,7 +128,7 @@
                 </div>
                 <div class="col-12 col-md-3">
                     <div
-                        class="box mb-3 mb-sm-0 d-flex flex-column flex-sm-row flex-md-column align-items-center gap-0 gap-sm-3 gap-md-0 text-center text-sm-start text-md-center">
+                        class="box mb-3 mb-sm-0 d-flex flex-column flex-sm-row flex-md-column align-items-center gap-0 gap-sm-3 gap-md-0 text-center text-sm-start text-md-center wow animate__animated animate__fadeInUp">
                         <img class="mb-4 mb-sm-0 mb-md-5 mr-0 mr-sm-3 mr-md-0" src="./images/home/collection/4.png"
                             alt="product-img">
                         <div class="text d-flex flex-column gap-3 gap-sm-4">
@@ -139,7 +145,7 @@
     <!--//TODO>> 3-Choose -->
     <section id="choose" class="space-top">
         <div class="container d-flex flex-column align-items-center">
-            <div class="content w-100">
+            <div class="content w-100 wow animate__animated animate__fadeIn">
                 <div class="text w-100 px-3 mb-3 d-flex flex-column align-items-center text-center gap-4">
                     <h2 class="title light mb-2">Why choose us?</h2>
                     <p class="des light">
@@ -152,7 +158,7 @@
             <div class="row g-4 g-md-1 g-lg-4">
                 <div class="col-12 col-md-4">
                     <div
-                        class="box mx-md-1 d-flex flex-column flex-sm-row flex-md-column align-items-center text-center text-sm-start text-md-center gap-4 gap-sm-5">
+                        class="box mx-md-1 d-flex flex-column flex-sm-row flex-md-column align-items-center text-center text-sm-start text-md-center gap-4 gap-sm-5 wow animate__animated animate__slideInUp">
                         <img src="./images/home/choose/coffee.svg" alt="coffee icon">
                         <div class="text d-flex flex-column gap-2 gap-sm-3 gap-md-4">
                             <h3 class="card-title light mb-1 mb-md-0">Best quality</h3>
@@ -163,7 +169,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div
-                        class="box mx-md-1 d-flex flex-column flex-sm-row flex-md-column align-items-center text-center text-sm-start text-md-center gap-4 gap-sm-5">
+                        class="box mx-md-1 d-flex flex-column flex-sm-row flex-md-column align-items-center text-center text-sm-start text-md-center gap-4 gap-sm-5 wow animate__animated animate__slideInUp">
                         <img src="./images/home/choose/gift.svg" alt="coffee icon">
                         <div class="text d-flex flex-column gap-2 gap-sm-3 gap-md-4">
                             <h3 class="card-title light mb-1 mb-md-0">Exclusive benefits</h3>
@@ -174,7 +180,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div
-                        class="box mx-md-1 d-flex flex-column flex-sm-row flex-md-column align-items-center text-center text-sm-start text-md-center gap-4 gap-sm-5">
+                        class="box mx-md-1 d-flex flex-column flex-sm-row flex-md-column align-items-center text-center text-sm-start text-md-center gap-4 gap-sm-5 wow animate__animated animate__slideInUp">
                         <img src="./images/home/choose/truck.svg" alt="coffee icon">
                         <div class="text d-flex flex-column gap-2 gap-sm-3 gap-md-4">
                             <h3 class="card-title light mb-1 mb-md-0">Free shipping</h3>
@@ -191,14 +197,15 @@
     <section id="how" class="space-top">
         <div
             class="container narrow d-flex flex-column align-items-center align-items-sm-start text-center text-sm-start">
-            <h3 class="card-title">How it works</h3>
+            <h3 class="card-title wow animate__animated animate__flipInY">How it works</h3>
             <div class="content w-100 d-flex flex-column flex-sm-row align-items-center align-items-sm-stretch">
                 <div class="box d-flex flex-column">
-                    <div class="shapes-wrapper d-none d-sm-flex flex-grow-1 align-items-center">
+                    <div
+                        class="shapes-wrapper d-none d-sm-flex flex-grow-1 align-items-center wow animate__animated animate__fadeIn">
                         <div class="circle"></div>
                         <div class="line flex-grow-1"></div>
                     </div>
-                    <div class="info d-flex flex-column">
+                    <div class="info d-flex flex-column wow animate__animated animate__fadeInLeft">
                         <span>01</span>
                         <h4 class="mx-5 mx-sm-0 pe-0 pe-xl-4">Pick your coffee</h4>
                         <p class="des">
@@ -209,11 +216,12 @@
                     </div>
                 </div>
                 <div class="box d-flex flex-column">
-                    <div class="shapes-wrapper d-none d-sm-flex flex-grow-1 align-items-center">
+                    <div
+                        class="shapes-wrapper d-none d-sm-flex flex-grow-1 align-items-center wow animate__animated animate__fadeIn">
                         <div class="circle"></div>
                         <div class="line flex-grow-1"></div>
                     </div>
-                    <div class="info d-flex flex-column">
+                    <div class="info d-flex flex-column wow animate__animated animate__fadeIn">
                         <span>02</span>
                         <h4 class="pe-0 pe-xl-4">Choose the frequency</h4>
                         <p class="des">
@@ -222,10 +230,11 @@
                     </div>
                 </div>
                 <div class="box d-flex flex-column">
-                    <div class="shapes-wrapper d-none d-sm-flex flex-grow-1 align-items-center">
+                    <div
+                        class="shapes-wrapper d-none d-sm-flex flex-grow-1 align-items-center wow animate__animated animate__fadeIn">
                         <div class="circle"></div>
                     </div>
-                    <div class="info d-flex flex-column">
+                    <div class="info d-flex flex-column wow animate__animated animate__fadeInRight">
                         <span>03</span>
                         <h4 class="pe-0 pe-xl-4">Receive and enjoy!</h4>
                         <p class="des">
@@ -234,14 +243,16 @@
                     </div>
                 </div>
             </div>
-            <a class="btn" href="./pages/subscribe/index.html">Create your plan</a>
+            <a class="btn wow animate__animated animate__flipInX" href="./pages/subscribe/index.html">Create your
+                plan</a>
         </div>
     </section>
 
     <!--//TODO>> Footer -->
     <footer class="space-top">
         <div class="container">
-            <div class="content d-flex flex-column flex-sm-row justify-content-between align-items-center gap-4">
+            <div
+                class="content wow animate__animated animate__fadeInDown d-flex flex-column flex-sm-row justify-content-between align-items-center gap-4">
                 <img src="./layout/images/footer/Footer Logo.svg" alt="footer-logo">
                 <nav class="d-flex">
                     <a href="#">Home</a>
@@ -267,9 +278,19 @@
         </div>
     </footer>
 
+    <!--//? Bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!--//? WOW.JS cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>

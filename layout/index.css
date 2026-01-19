@@ -11,6 +11,8 @@
   --green-500: #0e8784;
   --font-title: "Fraunces", serif;
   --font-body: "Barlow", sans-serif;
+
+  --animate-duration: 2s;
 }
 
 * {

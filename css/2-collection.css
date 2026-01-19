@@ -5,6 +5,8 @@ main {
     }
 
     .row {
+      position: relative;
+      z-index: 10;
       margin-top: -5rem;
 
       @media (max-width: 767px) {
