@@ -1,10 +1,11 @@
 footer {
-  margin-bottom: 40px;
-
-  @media (max-width: 575px) {
-    margin-bottom: 24px;
-  }
   .container {
+    padding-bottom: 40px;
+
+    @media (max-width: 575px) {
+      padding-bottom: 24px;
+    }
+
     .content {
       background-color: var(--primary);
       padding: 48px clamp(40px, 6vw, 80px);

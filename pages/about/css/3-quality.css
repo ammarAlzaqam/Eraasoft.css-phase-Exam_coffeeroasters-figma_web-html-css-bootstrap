@@ -1,6 +1,8 @@
 #quality {
   .container {
     .img-wrapper {
+      position: relative;
+      z-index: 10;
       padding-inline: clamp(40px, 6vw, 85px);
 
       @media (min-width: 576px) and (max-width: 767px) {

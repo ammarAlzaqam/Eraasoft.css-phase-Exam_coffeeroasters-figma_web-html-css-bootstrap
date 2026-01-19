@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../images/Icon.svg" type="image/svg">
+    <!--//? Bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--//? Font-Awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--//? Animate.css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="../../layout/index.css">
     <link rel="stylesheet" href="./css/subscribePage.css">
     <title>Subscribe</title>
@@ -19,7 +23,7 @@
 <body>
     <!--//TODO>> Header -->
     <header>
-        <div class="navbar navbar-expand-sm p-0">
+        <div class="navbar navbar-expand-sm p-0 animate__animated animate__fadeIn">
             <div class="container d-flex justify-content-between align-items-center gap-4 gap-sm-3">
 
                 <!-- Logo -->
@@ -64,7 +68,8 @@
     <!--//TODO>> 1-Hero Section -->
     <section id="sub-hero-sec">
         <div class="container">
-            <div class="content d-flex flex-column align-items-center align-items-sm-start text-center text-sm-start">
+            <div
+                class="content d-flex flex-column align-items-center align-items-sm-start text-center text-sm-start animate__animated animate__jackInTheBox">
                 <h1 class="head-text">Create plan</h1>
                 <p class="des light">
                     Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew
@@ -77,15 +82,15 @@
     <!--//TODO>> 2-Steps -->
     <section id="steps" class="space-top-3">
         <div class="container">
-            <div class="content">
-                <div class="shape-line d-none d-sm-block">
+            <div class="content overflow-hidden wow animate__animated animate__fadeIn">
+                <div class="shape-line d-none d-sm-block wow animate__animated animate__rollIn">
                     <div class="left-circle"></div>
                     <div class="mid-circle"></div>
                     <div class="right-circle"></div>
                 </div>
                 <div
                     class="boxes d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-start text-center text-sm-start">
-                    <div class="box d-flex flex-column">
+                    <div class="box d-flex flex-column wow animate__animated animate__fadeInDown">
                         <h5>01</h5>
                         <h3 class="pe-0 pe-lg-5">Pick your coffee</h3>
                         <p class="des light">
@@ -94,14 +99,14 @@
                             out.
                         </p>
                     </div>
-                    <div class="box d-flex flex-column">
+                    <div class="box d-flex flex-column wow animate__animated animate__zoomIn">
                         <h5>02</h5>
                         <h3>Choose the frequency</h3>
                         <p class="des light">
                             Customize your order frequency, quantity, even your roast style and grind type. Pause, skip
                             or cancel your subscription with no commitment through our online portal. </p>
                     </div>
-                    <div class="box d-flex flex-column">
+                    <div class="box d-flex flex-column wow animate__animated animate__fadeInUp">
                         <h5>03</h5>
                         <h3>Receive and enjoy!</h3>
                         <p class="des light">
@@ -115,9 +120,9 @@
 
     <!--//TODO>> 3-Preferences -->
     <section id="preferences" class="space-top-3">
-        <div class="container narrow d-flex flex-column flex-md-row align-items-start">
+        <div class="container overflow-hidden narrow d-flex flex-column flex-md-row align-items-start">
             <!--//! Aside -->
-            <aside class="d-flex flex-column">
+            <aside class="d-flex flex-column wow animate__animated animate__fadeInDown">
                 <div class="active d-flex align-items-center gap-4">
                     <h5 class="card-title">01</h5>
                     <h3 class="card-title">Preferences</h3>
@@ -146,7 +151,7 @@
             <!--//! Chooses -->
             <div class="chooses-wrapper accordion d-flex flex-column">
                 <!--//! Item.1 "How do you drink your coffee?" -->
-                <div class="accordion-item">
+                <div class="accordion-item wow animate__animated animate__zoomIn">
                     <div class="title accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -180,7 +185,7 @@
                     </div>
                 </div>
                 <!--//! Item.2 "What type of coffee?" -->
-                <div class="accordion-item">
+                <div class="accordion-item wow animate__animated animate__zoomIn">
                     <div class="title accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -216,7 +221,7 @@
                     </div>
                 </div>
                 <!--//! Item.3 "How much would you like?" -->
-                <div class="accordion-item">
+                <div class="accordion-item wow animate__animated animate__zoomIn">
                     <div class="title accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
@@ -250,7 +255,7 @@
                     </div>
                 </div>
                 <!--//! Item.4 "Want us to grind them?" -->
-                <div class="accordion-item">
+                <div class="accordion-item wow animate__animated animate__zoomIn">
                     <div class="title accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
@@ -283,7 +288,7 @@
                     </div>
                 </div>
                 <!--//! Item.5 "How often should we deliver?" -->
-                <div class="accordion-item">
+                <div class="accordion-item wow animate__animated animate__zoomIn">
                     <div class="title accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
@@ -317,14 +322,15 @@
                 </div>
                 <!--//* Order Summary -->
                 <div class="order-summary d-flex flex-column align-items-end">
-                    <div class="details d-flex flex-column gap-2">
+                    <div class="details d-flex flex-column gap-2 wow animate__animated animate__fadeIn">
                         <p class="des">Order Summary</p>
                         <h3 class="card-title light">
                             “I drink my coffee using <span>Capsules</span>, with a <span>Decaf</span> type of bean.
                             <span>250g</span> , sent to me <span>Every Week</span>.”
                         </h3>
                     </div>
-                    <a href="../order-summary/index.html" class="btn">Create your plan</a>
+                    <a href="../order-summary/index.html" class="btn wow animate__animated animate__flipInX">Create your
+                        plan</a>
                 </div>
             </div>
         </div>
@@ -332,8 +338,9 @@
 
     <!--//TODO>> Footer -->
     <footer class="space-top-3">
-        <div class="container">
-            <div class="content d-flex flex-column flex-sm-row justify-content-between align-items-center gap-4">
+        <div class="container overflow-hidden">
+            <div
+                class="content d-flex flex-column flex-sm-row justify-content-between align-items-center gap-4 wow animate__animated animate__fadeInUp">
                 <img src="../../layout/images/footer/Footer Logo.svg" alt="footer-logo">
                 <nav class="d-flex">
                     <a href="../../index.html">Home</a>
@@ -359,9 +366,19 @@
         </div>
     </footer>
 
+
+    <!--//? Bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!--//? WOW.JS cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
